@@ -80,8 +80,11 @@ class SklearnMLTrainer(MLModelTrainer):
                 input_data.get(f, 0.0) for f in features
             ]
 
+            # Create DataFrame with proper feature names to match training
+            feature_df = pd.DataFrame([feature_vector], columns=features)
+            
             # Make prediction
-            prediction = model.predict([feature_vector])[0]
+            prediction = model.predict(feature_df)[0]
             predictions[target_var] = float(prediction)
 
         return predictions
