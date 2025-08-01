@@ -188,3 +188,7 @@ python simple_ml_model.py
 - Never install packages with just 'pip'. Always use 'uv pip' and 'uv pip install'
 - Models saved in `saved_models/` directory with metadata tracking
 - Always use uv
+
+### Code Best Practices
+
+- Always follow https://www.anthropic.com/engineering/claude-code-best-practices

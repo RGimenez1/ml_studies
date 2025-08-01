@@ -8,7 +8,7 @@ __pycache__/
 
 # Node.js dependencies
 node_modules/
-
+.claude
 # Distribution / packaging
 .Python
 build/

@@ -1,0 +1,28 @@
+flowchart LR
+    subgraph "Training Data"
+        DATA[Dataset with 10 variables]
+    end
+    
+    subgraph "Parallel Model Training"
+        DATA --> M1[Model 1: Predict Speed<br/>from other 9 variables]
+        DATA --> M2[Model 2: Predict Throttle<br/>from other 9 variables]
+        DATA --> M3[Model 3: Predict Brake<br/>from other 9 variables]
+        DATA --> M4[Model 4: Predict Surface_Roughness<br/>from other 9 variables]
+        DATA --> M5[Model 5: Predict front_surface_temp<br/>from other 9 variables]
+        DATA --> M6[Model 6: Predict rear_surface_temp<br/>from other 9 variables]
+        DATA --> M7[Model 7: Predict force_on_tire<br/>from other 9 variables]
+        DATA --> M8[Model 8: Predict Tire_wear<br/>from other 9 variables]
+        DATA --> M9[Model 9: Predict Tire_degradation<br/>from other 9 variables]
+        DATA --> M10[Model 10: Predict cumulative_Tire_Wear<br/>from other 9 variables]
+    end
+    
+    M1 --> OUTPUT[Complete Parameter<br/>Impact System]
+    M2 --> OUTPUT
+    M3 --> OUTPUT
+    M4 --> OUTPUT
+    M5 --> OUTPUT
+    M6 --> OUTPUT
+    M7 --> OUTPUT
+    M8 --> OUTPUT
+    M9 --> OUTPUT
+    M10 --> OUTPUT
